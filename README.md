@@ -7,3 +7,5 @@ Classes:
 - Stack (fixed size array implementation)
 - customSort
 - Client/Main
+
+The remaining files are input files of various lengths.

@@ -18,6 +18,7 @@ public class Client {
 	public Client(String file_path) {
 		path = file_path;
 	}
+	
 	public Integer[] readToArray() throws IOException {
 		FileReader fr = new FileReader(path);
 		BufferedReader reader = new BufferedReader(fr);
@@ -43,7 +44,6 @@ public class Client {
 		for (int i = 0; i < count; i++) {
 			 inputData.push( Integer.parseInt( reader.readLine() ));
 		}
-		
 		reader.close();
 		return inputData;
 	}
@@ -62,9 +62,6 @@ public class Client {
 		reader.close();
 		return count;
 	}
-	
-	
-	
 	/***************************************************************
 	 *        Methods to write sorted data into text files         *
 	 ***************************************************************/
@@ -90,9 +87,6 @@ public class Client {
 		
 		writer.close();
 	}
-	
-	
-	
 	/***************************************************************
 	 *     Method to compare the contents of two text files        *
 	 ***************************************************************/
@@ -128,9 +122,6 @@ public class Client {
 		else {
 			return false; }
 	}
-	
-	
-	
 	/***************************************************************
 	 *    Methods to compute time taken by sorting algorithm       *
 	 ***************************************************************/
@@ -150,12 +141,8 @@ public class Client {
 		
 		return runTime;
 	}
-
-
 	
 	public static void main(String args[]) throws IOException {
-		
-		
 		/**********************************************************************
 		 *                             Quicksort                              *
 		 **********************************************************************/
@@ -175,7 +162,6 @@ public class Client {
 		}
 		System.out.println(" ");
 		System.out.println(" ");
-		
 		
 		/*******************
 		 *  array size 10  *
